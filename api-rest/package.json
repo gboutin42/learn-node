@@ -1,0 +1,25 @@
+{
+  "name": "api-rest",
+  "version": "1.0.0",
+  "description": "An awesome API rest",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gboutin42/learn-node.git"
+  },
+  "author": "Boutin Grégory",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gboutin42/learn-node/issues"
+  },
+  "homepage": "https://github.com/gboutin42/learn-node#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.3"
+  }
+}
