@@ -17,9 +17,11 @@
   },
   "homepage": "https://github.com/gboutin42/learn-node#readme",
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
+    "morgan": "^1.10.0",
     "nodemon": "^3.1.3"
   }
 }
