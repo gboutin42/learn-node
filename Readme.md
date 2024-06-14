@@ -1,3 +1,4 @@
-Bienvenue dans le Readme d'un projet que j'ai créer pour apprendre NodeJs
+Welcome into my project than I created to learn NodeJs
 
-Welcome into the Readme of a project than I just created to learn NodeJs
+Here we use nodeJs with express,
+we use also some middlewares like morgan and serve-favicon to handle some reccurent behavior
