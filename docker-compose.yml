@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  db:
+    image: mariadb:latest
+    ports:
+      - ${DB_PORT}:3306
+    volumes:
+      - ./tmp/mysql_data:/var/lib/mysql
+    environment:
+      MARIADB_ROOT_PASSWORD: ${DB_PASSWORD}
+    networks:
+      - project-network
+networks:
+  project-network:
+    name: ${APP_NAME}-network
