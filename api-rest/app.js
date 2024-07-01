@@ -45,5 +45,29 @@ require('./src/routes/createPokemon')(app)
 require('./src/routes/updatePokemon')(app)
 require('./src/routes/deletePokemon')(app)
 
+// Handling 404 error
+app.use(({res}) => {
+    const message = 'Impossible de trouver la ressource demandée ! Vous pouvez essayer une autre URL.'
+    res.status(404).json({message})
+})
+
 // Server listener on the port
 app.listen(port, () => console.log(`Our Node application is start on : http://localhost:${port}`))
+
+
+/**
+ * 1XX : Information
+ * 2XX : Success (
+ *  200
+ *  201
+ * )
+ * 3XX : Redirection
+ * 4XX : Erreur client (
+ *  400 : Erreur général du client
+ *  401 : Client non authentifié
+ *  403 : Authentifié mais problème de droit
+ *  404 : Ressource n'existe pas en db
+ *  418 : I'm a tea pot
+ * )
+ * 5XX : Erreur serveur (500)
+ */
